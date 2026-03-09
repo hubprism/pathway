@@ -120,6 +120,34 @@ margin-top:10px;
 opacity:0.9;
 }
 
+.floating-buttons{
+position:absolute;
+right:15px;
+bottom:15px;
+display:flex;
+gap:10px;
+}
+
+.float-btn{
+width:45px;
+height:45px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:18px;
+text-decoration:none;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.email{
+background:#2ed573;
+}
+
+.share{
+background:#2ed573;
+}
 </style>
 
 </head>
@@ -129,7 +157,23 @@ opacity:0.9;
 <div class="card">
 
 <div class="header">
+<div class="header">
+
+<div class="floating-buttons">
+
+<a href="mailto:uchechukwu@pathway.ng" class="float-btn email">
+✉
+</a>
+
+<a href="#" class="float-btn share" onclick="shareContact()">
+⤴
+</a>
+
+</div>
+
 <img class="profile-img" src="images/Uchechukwu.png">
+
+</div>
 </div>
 
 <div class="content">
@@ -167,6 +211,28 @@ opacity:0.9;
 </div>
 
 </div>
+
+<script>
+
+function shareContact(){
+
+if(navigator.share){
+
+navigator.share({
+title:"Uchechukwu Nwogu",
+text:"IT Support Specialist - Pathway Holdings Limited",
+url:window.location.href
+});
+
+}else{
+
+alert("Sharing not supported on this device");
+
+}
+
+}
+
+</script>
 
 </body>
 </html>
