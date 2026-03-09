@@ -12,14 +12,14 @@ vcf:"uchechukwu.vcf"
 },
 
 2:{
-name:"John Doe",
-position:"Network Engineer",
+name:"Taiwo Akinsade",
+position:"Senior IT Specialist",
 company:"Pathway Holdings Limited",
 website:"https://pathway.ng",
 email:"john@pathway.ng",
 phone:"2348011111111",
 photo:"images/john.png",
-vcf:"john.vcf"
+vcf:"taiwo.vcf"
 }
 
 };
