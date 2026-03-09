@@ -96,6 +96,20 @@ flex-direction:column;
 gap:12px;
 }
 
+.row-buttons{
+display:flex;
+gap:10px;
+}
+
+.row-buttons .btn{
+flex:1;
+text-align:center;
+}
+
+.share{
+background:#20c997;
+}
+
 .btn{
 padding:14px;
 border-radius:8px;
@@ -158,8 +172,20 @@ opacity:0.9;
 📧 Send Email
 </a>
 
+<div class="row-buttons">
+
 <a class="btn whatsapp" href="https://wa.me/2349039024299">
 💬 WhatsApp
+</a>
+
+<a class="btn share" onclick="shareContact()">
+🔗 Share
+</a>
+
+</div>
+
+<a class="btn save" href="uchechukwu.vcf" download>
+⬇ Save Contact
 </a>
 
 </div>
@@ -167,7 +193,27 @@ opacity:0.9;
 </div>
 
 </div>
+<script>
 
+function shareContact(){
+
+if(navigator.share){
+
+navigator.share({
+title:"Uchechukwu Nwogu",
+text:"IT Support Specialist - Pathway Holdings Limited",
+url:window.location.href
+});
+
+}else{
+
+alert("Sharing is not supported on this device.");
+
+}
+
+}
+
+</script>
 
 </body>
 </html>
