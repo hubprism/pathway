@@ -168,5 +168,26 @@ opacity:0.9;
 
 </div>
 
+<script>
+
+function shareContact(){
+
+if(navigator.share){
+
+navigator.share({
+title:"Uchechukwu Nwogu",
+text:"IT Support Specialist - Pathway Holdings Limited",
+url:window.location.href
+});
+
+}else{
+
+alert("Sharing not supported on this device");
+
+}
+
+}
+
+</script>
 </body>
 </html>
