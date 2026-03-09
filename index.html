@@ -57,7 +57,228 @@ left:50%;
 transform:translateX(-50%);
 }
 
+/* Content */<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Uchechukwu Nwogu</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body{
+background:#f2f4f8;
+display:flex;
+justify-content:center;
+padding:20px;
+}
+
+/* Card */
+
+.card{
+width:100%;
+max-width:420px;
+background:white;
+border-radius:16px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Banner */
+
+.banner{
+height:150px;
+background:url("images/company-logo.png") center/cover no-repeat;
+position:relative;
+}
+
+/* Floating Buttons */
+
+.actions{
+position:absolute;
+right:15px;
+bottom:15px;
+display:flex;
+gap:10px;
+}
+
+.action-btn{
+width:45px;
+height:45px;
+background:#2ed573;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:18px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Profile Image */
+
+.profile{
+position:relative;
+margin-top:-60px;
+padding-left:20px;
+}
+
+.profile img{
+width:110px;
+height:110px;
+border-radius:50%;
+border:5px solid white;
+object-fit:cover;
+}
+
 /* Content */
+
+.content{
+padding:20px;
+}
+
+.name{
+font-size:24px;
+font-weight:700;
+margin-top:10px;
+}
+
+.title{
+color:#333;
+margin-top:6px;
+font-size:16px;
+}
+
+.company{
+color:#2ecc71;
+margin-top:5px;
+font-weight:600;
+}
+
+/* Contact info */
+
+.info{
+margin-top:15px;
+font-size:15px;
+color:#444;
+display:flex;
+align-items:center;
+gap:8px;
+}
+
+/* Save contact button */
+
+.save-btn{
+margin-top:15px;
+background:#0a0a23;
+color:white;
+padding:12px 18px;
+border-radius:10px;
+display:inline-block;
+text-decoration:none;
+font-weight:600;
+}
+
+/* Sections */
+
+.section{
+margin-top:30px;
+}
+
+.section h3{
+margin-bottom:10px;
+font-size:18px;
+}
+
+/* Green action button */
+
+.green-btn{
+margin-top:10px;
+background:#2ed573;
+color:white;
+padding:14px;
+border-radius:10px;
+text-align:center;
+text-decoration:none;
+display:block;
+font-weight:600;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="banner">
+
+<div class="actions">
+<div class="action-btn">✉</div>
+<div class="action-btn">⤴</div>
+</div>
+
+</div>
+
+<div class="profile">
+<img src="images/Uchechukwu.png">
+</div>
+
+<div class="content">
+
+<div class="name">Uchechukwu Nwogu</div>
+
+<div class="title">
+IT Support Specialist
+</div>
+
+<div class="company">
+Pathway Holdings Limited
+</div>
+
+<a class="save-btn" href="uchechukwu.vcf" download>
+💾 Save Contact
+</a>
+
+<div class="info">📞 +2349039024299</div>
+
+<div class="info">✉ uchechukwu@pathway.ng</div>
+
+<div class="section">
+<h3>About me</h3>
+<p>
+Experienced IT Support Specialist providing technical support,
+system troubleshooting and network assistance.
+</p>
+</div>
+
+<div class="section">
+<h3>Connect with me</h3>
+
+<a class="green-btn" href="https://wa.me/2349039024299">
+Exchange Contact
+</a>
+
+<a class="green-btn" href="https://www.pathway.ng">
+Visit Website
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
 
 .content{
 padding:80px 25px 30px;
