@@ -1,0 +1,19 @@
+[
+{
+"id":1,
+"name":"Uchechukwu Nwogu",
+"position":"IT Support Engineer",
+"phone":"+234800000000",
+"email":"uche@company.com",
+"image":"images/staff1.jpg"
+},
+
+{
+"id":2,
+"name":"Gloria James",
+"position":"Account Officer",
+"phone":"+234801111111",
+"email":"gloria@company.com",
+"image":"images/staff2.jpg"
+}
+]

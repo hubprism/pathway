@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Uchechukwu Nwogu</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body{
+background:#f1f4f9;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+/* Card Container */
+
+.card{
+width:95%;
+max-width:420px;
+background:white;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 15px 35px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+/* Header */
+
+.header{
+background:linear-gradient(135deg,#0052cc,#007bff);
+padding:40px 20px 70px;
+position:relative;
+}
+
+/* Profile Photo */
+
+.profile-img{
+width:130px;
+height:130px;
+border-radius:50%;
+border:6px solid white;
+object-fit:cover;
+position:absolute;
+bottom:-65px;
+left:50%;
+transform:translateX(-50%);
+}
+
+/* Content */
+
+.content{
+padding:80px 25px 30px;
+}
+
+h2{
+font-size:24px;
+margin-bottom:5px;
+color:#222;
+}
+
+.title{
+color:#007bff;
+font-weight:600;
+margin-bottom:5px;
+}
+
+.company{
+color:#666;
+margin-bottom:20px;
+}
+
+/* Contact Info */
+
+.info{
+margin:12px 0;
+font-size:15px;
+color:#444;
+}
+
+/* Buttons */
+
+.buttons{
+margin-top:20px;
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+.btn{
+padding:14px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+color:white;
+display:block;
+}
+
+.call{ background:#007bff; }
+
+.email{ background:#5c6bc0; }
+
+.whatsapp{ background:#25D366; }
+
+.save{
+background:#222;
+margin-top:15px;
+}
+
+/* Hover */
+
+.btn:hover{
+opacity:0.9;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="header">
+<img class="profile-img" src="images/Uchechukwu.png">
+</div>
+
+<div class="content">
+
+<h2>Uchechukwu Nwogu</h2>
+<div class="title">IT Support Specialist</div>
+<div class="company">Pathway Holdings Limited</div>
+
+<div class="info">📞 +2349039024299</div>
+<div class="info">📧 uchechukwu@pathway.ng</div>
+
+<div class="buttons">
+
+<a class="btn call" href="tel:+2349039024299">
+📞 Call
+</a>
+
+<a class="btn email" href="mailto:uchechukwu@pathway.ng">
+📧 Send Email
+</a>
+
+<a class="btn whatsapp" href="https://wa.me/2349039024299">
+💬 WhatsApp
+</a>
+
+<a class="btn save" href="uchechukwu.vcf" download>
+⬇ Save Contact
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
