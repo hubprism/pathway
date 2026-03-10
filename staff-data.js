@@ -77,5 +77,17 @@ photo:"images/esther.png",
 vcf:"esther.vcf"
 },
 
+8:{
+name:"Jane Edeh",
+position:"Human Resources",
+company:"Pathway Holdings Limited",
+website:"https://pathway.ng",
+email:"jane@pathway.ng",
+phone:"2348062365159",
+photo:"images/jane.png",
+vcf:"jane.vcf"
+},
+
+
 
 };
