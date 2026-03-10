@@ -55,4 +55,16 @@ photo:"images/blessing.png",
 vcf:"blessing.vcf"
 },
 
+6:{
+name:"Osayi Uuzebor",
+position:"Human Resources Manager",
+company:"Pathway Holdings Limited",
+website:"https://pathway.ng",
+email:"osayig@pathway.ng",
+phone:"2348036157842",
+photo:"images/osayi.png",
+vcf:"osayi.vcf"
+},
+
+
 };
