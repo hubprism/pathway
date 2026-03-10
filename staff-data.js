@@ -66,5 +66,16 @@ photo:"images/Osayi.png",
 vcf:"osayi.vcf"
 },
 
+7:{
+name:"Esther Aver",
+position:"Human Resources",
+company:"Pathway Holdings Limited",
+website:"https://pathway.ng",
+email:"estherg@pathway.ng",
+phone:"2348118216229",
+photo:"images/esther.png",
+vcf:"esther.vcf"
+},
+
 
 };
