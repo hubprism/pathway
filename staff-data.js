@@ -33,5 +33,15 @@ photo:"images/ajibola.png",
 vcf:"uchechukwu.vcf"
 },
 
+4:{
+name:"Paul Ojo",
+position:"IT Support Specialist",
+company:"Pathway Holdings Limited",
+website:"https://pathway.ng",
+email:"paul@pathway.ng",
+phone:"2349166816081",
+photo:"images/paul.png",
+vcf:"paul.vcf"
+},
 
 };
