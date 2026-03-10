@@ -70,7 +70,7 @@ vcf:"osayi.vcf"
 name:"Esther Aver",
 position:"Human Resources",
 company:"Pathway Holdings Limited",
-website:"https://pathway.ng",
+website:"www.pathway.ng",
 email:"estherg@pathway.ng",
 phone:"2348118216229",
 photo:"images/esther.png",
