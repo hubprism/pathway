@@ -99,6 +99,16 @@ photo:"images/sanmi.png",
 vcf:"sanmi.vcf"
 },
 
+10:{
+name:"Kunle Akanbi",
+position:"Admin Officer",
+company:"Pathway Holdings Limited",
+website:"https://pathway.ng",
+email:"kunle@pathway.ng",
+phone:"2347062894636",
+photo:"images/kunle.png",
+vcf:"kunle.vcf"
+},
 
 
 };
