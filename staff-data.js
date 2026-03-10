@@ -88,6 +88,17 @@ photo:"images/jane.png",
 vcf:"jane.vcf"
 },
 
+9:{
+name:"Sanmi Ikuemonisan",
+position:"Admin Officer",
+company:"Pathway Holdings Limited",
+website:"https://pathway.ng",
+email:"sanmi@pathway.ng",
+phone:"2348166322131",
+photo:"images/sanmi.png",
+vcf:"sanmi.vcf"
+},
+
 
 
 };
