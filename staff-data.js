@@ -44,4 +44,15 @@ photo:"images/paul.png",
 vcf:"paul.vcf"
 },
 
+5:{
+name:"Blessing Okoro",
+position:"Receptionist",
+company:"Pathway Holdings Limited",
+website:"https://pathway.ng",
+email:"blessing@pathway.ng",
+phone:"2348126996043",
+photo:"images/blessing.png",
+vcf:"blessing.vcf"
+},
+
 };
