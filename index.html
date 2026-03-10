@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Uchechukwu Nwogu</title>
+<title>Staff Card</title>
 
 <style>
 
@@ -22,8 +22,6 @@ justify-content:center;
 padding:40px;
 }
 
-/* Card */
-
 .card{
 width:100%;
 max-width:420px;
@@ -34,15 +32,11 @@ box-shadow:0 10px 25px rgba(0,0,0,0.1);
 text-align:center;
 }
 
-/* Header */
-
 .header{
 height:160px;
 background:url("images/background.png") center/cover no-repeat;
 position:relative;
 }
-
-/* Profile Image */
 
 .profile-img{
 width:120px;
@@ -56,8 +50,6 @@ bottom:-60px;
 left:50%;
 transform:translateX(-50%);
 }
-
-/* Content */
 
 .content{
 padding:80px 25px 30px;
@@ -80,15 +72,11 @@ margin-bottom:20px;
 font-weight:600;
 }
 
-/* Contact Info */
-
 .info{
 margin:12px 0;
 font-size:15px;
 color:#444;
 }
-
-/* Buttons */
 
 .buttons{
 margin-top:20px;
@@ -144,44 +132,44 @@ opacity:0.9;
 <div class="card">
 
 <div class="header">
-<img class="profile-img" src="images/Uchechukwu.png">
+<img id="photo" class="profile-img" src="">
 </div>
 
 <div class="content">
 
-<h2>Uchechukwu Nwogu</h2>
+<h2 id="name"></h2>
 
-<div class="title">IT Support Specialist</div>
+<div class="title" id="position"></div>
 
-<div class="company">Pathway Holdings Limited</div>
+<div class="company" id="company"></div>
 
-<div class="info">🌐 <a href="https://pathway.ng">www.pathway.ng</a></div>
+<div class="info">🌐 <a id="website" href="" target="_blank"></a></div>
 
-<div class="info">📧 uchechukwu@pathway.ng</div>
+<div class="info">📧 <span id="emailText"></span></div>
 
 <div class="buttons">
 
-<a class="btn call" href="tel:+2349039024299">
+<a class="btn call" id="callBtn" href="#">
 📞 Call
 </a>
 
-<a class="btn email" href="mailto:uchechukwu@pathway.ng">
+<a class="btn email" id="emailBtn" href="#">
 📧 Send Email
 </a>
 
 <div class="row-buttons">
 
-  <a class="btn whatsapp" href="https://wa.me/2349039024299" title="WhatsApp">
-  <img src="images/whatsapp.png" alt="WhatsApp" style="width:24px;height:24px;">
+<a class="btn whatsapp" id="whatsappBtn" href="#">
+<img src="images/whatsapp.png" style="width:24px;height:24px;">
 </a>
 
-  <a class="btn share" onclick="shareContact()">
-    <img src="images/share.png" alt="share" style="width:24px;height:24px;">
-  </a>
+<a class="btn share" onclick="shareContact()">
+<img src="images/share.png" style="width:24px;height:24px;">
+</a>
 
 </div>
 
-<a class="btn save" href="uchechukwu.vcf" download>
+<a class="btn save" id="saveBtn" href="#" download>
 ⬇ Save Contact
 </a>
 
@@ -190,21 +178,57 @@ opacity:0.9;
 </div>
 
 </div>
+
+
+
 <script>
+
+let currentPerson = null;
+
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get("id");
+
+if(staff[id]){
+
+const person = staff[id];
+currentPerson = person;
+
+document.getElementById("name").innerText = person.name;
+document.getElementById("position").innerText = person.position;
+document.getElementById("company").innerText = person.company;
+
+document.getElementById("website").innerText = person.website;
+document.getElementById("website").href = person.website;
+
+document.getElementById("emailText").innerText = person.email;
+
+document.getElementById("photo").src = person.photo;
+
+document.getElementById("callBtn").href = "tel:+" + person.phone;
+
+document.getElementById("emailBtn").href = "mailto:" + person.email;
+
+document.getElementById("whatsappBtn").href = "https://wa.me/" + person.phone;
+
+document.getElementById("saveBtn").href = person.vcf;
+
+document.title = person.name;
+
+}
 
 function shareContact(){
 
-if(navigator.share){
+if(navigator.share && currentPerson){
 
 navigator.share({
-title:"Uchechukwu Nwogu",
-text:"IT Support Specialist - Pathway Holdings Limited", 
-url:window.location.href
+title: currentPerson.name,
+text: currentPerson.position + " - " + currentPerson.company,
+url: window.location.href
 });
 
 }else{
 
-alert("Sharing is not supported on this device.");
+alert("Sharing not supported on this device");
 
 }
 
