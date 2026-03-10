@@ -16,9 +16,9 @@ name:"Taiwo Akinsade",
 position:"Senior IT Specialist",
 company:"Pathway Holdings Limited",
 website:"https://pathway.ng",
-email:"john@pathway.ng",
-phone:"2348011111111",
-photo:"images/john.png",
+email:"taiwo@pathway.ng",
+phone:"+2348022485657",
+photo:"images/taiwo.png",
 vcf:"taiwo.vcf"
 }
 
