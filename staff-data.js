@@ -62,7 +62,7 @@ company:"Pathway Holdings Limited",
 website:"https://pathway.ng",
 email:"osayig@pathway.ng",
 phone:"2348036157842",
-photo:"images/osayi.png",
+photo:"images/Osayi.png",
 vcf:"osayi.vcf"
 },
 
