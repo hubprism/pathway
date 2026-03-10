@@ -4,7 +4,7 @@ const staff = {
 name:"Uchechukwu Nwogu",
 position:"IT Support Specialist",
 company:"Pathway Holdings Limited",
-website:"www.pathway.ng",
+website:"https://pathway.ng",
 email:"uchechukwu@pathway.ng",
 phone:"2349039024299",
 photo:"images/Uchechukwu.png",
