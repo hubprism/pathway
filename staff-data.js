@@ -110,5 +110,17 @@ photo:"images/kunle.png",
 vcf:"kunle.vcf"
 },
 
+11:{
+name:"Adekunle Alade",
+position:"GCEO",
+company:"Pathway Holdings Limited",
+website:"https://pathway.ng",
+email:"adekunle@pathwayadvisorsng.com",
+phone:"2347069721470",
+photo:"images/adekunle.png",
+vcf:"adekunle.vcf"
+},
+
+
 
 };
