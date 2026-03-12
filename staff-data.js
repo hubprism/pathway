@@ -1,6 +1,6 @@
 const staff = {
 
-Uchechukwu:{
+1:{
 name:"Uchechukwu Nwogu",
 position:"IT Support Specialist",
 company:"Pathway Holdings Limited",
@@ -11,7 +11,7 @@ photo:"images/Uchechukwu.png",
 vcf:"uchechukwu.vcf"
 },
 
-Taiwo:{
+2:{
 name:"Taiwo Akinsade",
 position:"Senior IT Specialist",
 company:"Pathway Holdings Limited",
@@ -22,7 +22,7 @@ photo:"images/taiwo.png",
 vcf:"taiwo.vcf"
 },
 
-Ajibola:{
+3:{
 name:"Ajibola Adekoya",
 position:"IT Support Specialist",
 company:"Pathway Holdings Limited",
@@ -33,7 +33,7 @@ photo:"images/ajibola.png",
 vcf:"uchechukwu.vcf"
 },
 
-Paul:{
+4:{
 name:"Paul Ojo",
 position:"IT Support Specialist",
 company:"Pathway Holdings Limited",
@@ -44,7 +44,7 @@ photo:"images/paul.png",
 vcf:"paul.vcf"
 },
 
-Blessing:{
+5:{
 name:"Blessing Okoro",
 position:"Receptionist",
 company:"Pathway Holdings Limited",
@@ -55,7 +55,7 @@ photo:"images/blessing.png",
 vcf:"blessing.vcf"
 },
 
-Osayi:{
+6:{
 name:"Osayi Uuzebor",
 position:"Human Resources Manager",
 company:"Pathway Holdings Limited",
@@ -66,7 +66,7 @@ photo:"images/Osayi.png",
 vcf:"osayi.vcf"
 },
 
-Esther:{
+7:{
 name:"Esther Aver",
 position:"Human Resources",
 company:"Pathway Holdings Limited",
@@ -77,7 +77,7 @@ photo:"images/esther.png",
 vcf:"esther.vcf"
 },
 
-Jane:{
+8:{
 name:"Jane Edeh",
 position:"Human Resources",
 company:"Pathway Holdings Limited",
@@ -88,7 +88,7 @@ photo:"images/jane.png",
 vcf:"jane.vcf"
 },
 
-Sanmi:{
+9:{
 name:"Sanmi Ikuemonisan",
 position:"Admin Officer",
 company:"Pathway Holdings Limited",
@@ -99,7 +99,7 @@ photo:"images/sanmi.png",
 vcf:"sanmi.vcf"
 },
 
-Kunle:{
+10:{
 name:"Kunle Akanbi",
 position:"Admin Officer",
 company:"Pathway Holdings Limited",
@@ -110,7 +110,7 @@ photo:"images/kunle.png",
 vcf:"kunle.vcf"
 },
 
-Adekunle:{
+11:{
 name:"Adekunle Alade",
 position:"GCEO",
 company:"Pathway Holdings Limited",
@@ -121,7 +121,7 @@ photo:"images/adekunle.png",
 vcf:"adekunle.vcf"
 },
 
-Dolapo:{
+12:{
 name:"Dolapo Akanbi-Alade",
 position:"GCOO",
 company:"Pathway Holdings Limited",
