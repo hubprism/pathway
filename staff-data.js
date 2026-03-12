@@ -1,6 +1,6 @@
 const staff = {
 
-uchechukwu:{
+Uchechukwu:{
 name:"Uchechukwu Nwogu",
 position:"IT Support Specialist",
 company:"Pathway Holdings Limited",
