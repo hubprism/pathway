@@ -193,7 +193,6 @@
 
       <div class="buttons">
         <a class="btn call" id="callBtn" href="#">📞 Call</a>
-
         <a class="btn email" id="emailBtn" href="#">📧 Send Email</a>
 
         <div class="row-buttons">
@@ -211,7 +210,7 @@
     </div>
   </div>
 
-  <script src="./staff-data.js"></script>
+  <script src="./staff-data.js?v=2"></script>
 
   <script>
     let currentPerson = null;
@@ -238,11 +237,11 @@
       return String(phone).replace(/\D/g, "");
     }
 
-    function showNotFound() {
+    function showNotFound(message) {
       document.body.innerHTML = `
         <div class="not-found">
           <h2>Staff not found</h2>
-          <p>Check the staff name in the link and try again.</p>
+          <p>${message}</p>
         </div>
       `;
     }
@@ -250,8 +249,21 @@
     function loadStaffData() {
       const name = getStaffNameFromUrl();
 
-      if (!name || typeof staff === "undefined" || !staff[name]) {
-        showNotFound();
+      if (!name) {
+        showNotFound("No staff name was found in the link.");
+        return;
+      }
+
+      if (typeof staff === "undefined") {
+        showNotFound("staff-data.js did not load.");
+        return;
+      }
+
+      console.log("Detected name:", name);
+      console.log("Available staff keys:", Object.keys(staff));
+
+      if (!staff[name]) {
+        showNotFound("This staff name does not exist in staff-data.js.");
         return;
       }
 

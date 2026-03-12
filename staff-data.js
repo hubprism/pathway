@@ -1,3 +1,5 @@
+console.log("NEW staff-data.js loaded");
+
 const staff = {
   uchechukwu: {
     name: "Uchechukwu Nwogu",
