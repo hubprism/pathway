@@ -30,7 +30,7 @@ website:"https://pathway.ng",
 email:"ajibola@pathway.ng",
 phone:"2347032028517",
 photo:"images/ajibola.png",
-vcf:"uchechukwu.vcf"
+vcf:"ajibola.vcf"
 },
 
 4:{
