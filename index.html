@@ -204,7 +204,13 @@ padding:80px 20px 25px;
 let currentPerson = null;
 
 const urlParams = new URLSearchParams(window.location.search);
-const name = urlParams.get("name");
+
+const urlParams = new URLSearchParams(window.location.search);
+let name = urlParams.get("name");
+
+if(!name){
+name = window.location.pathname.replace("/","");
+}
 
 if(staff[name]){
 const person = staff[name];
