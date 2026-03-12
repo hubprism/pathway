@@ -204,11 +204,11 @@ padding:80px 20px 25px;
 let currentPerson = null;
 
 const urlParams = new URLSearchParams(window.location.search);
-const name = urlParams.get("name");
+const id = urlParams.get("id");
 
-if(staff[name]){
+if(staff[id]){
 
-const person = staff[name];
+const person = staff[id];
 currentPerson = person;
 
 document.getElementById("name").innerText = person.name;
