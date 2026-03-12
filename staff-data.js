@@ -1,6 +1,6 @@
 const staff = {
 
-1:{
+Uchechukwu:{
 name:"Uchechukwu Nwogu",
 position:"IT Support Specialist",
 company:"Pathway Holdings Limited",
@@ -11,7 +11,7 @@ photo:"images/Uchechukwu.png",
 vcf:"uchechukwu.vcf"
 },
 
-2:{
+Taiwo:{
 name:"Taiwo Akinsade",
 position:"Senior IT Specialist",
 company:"Pathway Holdings Limited",
@@ -22,7 +22,7 @@ photo:"images/taiwo.png",
 vcf:"taiwo.vcf"
 },
 
-3:{
+Ajibola:{
 name:"Ajibola Adekoya",
 position:"IT Support Specialist",
 company:"Pathway Holdings Limited",
@@ -33,7 +33,7 @@ photo:"images/ajibola.png",
 vcf:"ajibola.vcf"
 },
 
-4:{
+Paul:{
 name:"Paul Ojo",
 position:"IT Support Specialist",
 company:"Pathway Holdings Limited",
@@ -44,7 +44,7 @@ photo:"images/paul.png",
 vcf:"paul.vcf"
 },
 
-5:{
+Blessing:{
 name:"Blessing Okoro",
 position:"Receptionist",
 company:"Pathway Holdings Limited",
@@ -55,7 +55,7 @@ photo:"images/blessing.png",
 vcf:"blessing.vcf"
 },
 
-6:{
+Osayi:{
 name:"Osayi Uuzebor",
 position:"Human Resources Manager",
 company:"Pathway Holdings Limited",
@@ -66,7 +66,7 @@ photo:"images/Osayi.png",
 vcf:"osayi.vcf"
 },
 
-7:{
+Esther:{
 name:"Esther Aver",
 position:"Human Resources",
 company:"Pathway Holdings Limited",
@@ -77,7 +77,7 @@ photo:"images/esther.png",
 vcf:"esther.vcf"
 },
 
-8:{
+Jane:{
 name:"Jane Edeh",
 position:"Human Resources",
 company:"Pathway Holdings Limited",
@@ -88,7 +88,7 @@ photo:"images/jane.png",
 vcf:"jane.vcf"
 },
 
-9:{
+Sanmi:{
 name:"Sanmi Ikuemonisan",
 position:"Admin Officer",
 company:"Pathway Holdings Limited",
@@ -99,7 +99,7 @@ photo:"images/sanmi.png",
 vcf:"sanmi.vcf"
 },
 
-10:{
+Kunle:{
 name:"Kunle Akanbi",
 position:"Admin Officer",
 company:"Pathway Holdings Limited",
@@ -110,7 +110,7 @@ photo:"images/kunle.png",
 vcf:"kunle.vcf"
 },
 
-11:{
+Adekunle:{
 name:"Adekunle Alade",
 position:"GCEO",
 company:"Pathway Holdings Limited",
@@ -121,7 +121,7 @@ photo:"images/adekunle.png",
 vcf:"adekunle.vcf"
 },
 
-12:{
+Dolapo:{
 name:"Dolapo Akanbi-Alade",
 position:"GCOO",
 company:"Pathway Holdings Limited",
