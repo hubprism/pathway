@@ -121,6 +121,17 @@ photo:"images/adekunle.png",
 vcf:"adekunle.vcf"
 },
 
+12:{
+name:"Dolapo Akanbi-Alade",
+position:"GCOO",
+company:"Pathway Holdings Limited",
+website:"https://pathway.ng",
+email:"dolapo@pathway.ng",
+phone:"2348039210599",
+photo:"images/dolapo.png",
+vcf:"dolapo.vcf"
+},
+
 
 
 };
