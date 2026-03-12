@@ -1,6 +1,6 @@
 const staff = {
 
-Uchechukwu:{
+uchechukwu:{
 name:"Uchechukwu Nwogu",
 position:"IT Support Specialist",
 company:"Pathway Holdings Limited",
@@ -11,7 +11,7 @@ photo:"images/Uchechukwu.png",
 vcf:"uchechukwu.vcf"
 },
 
-Taiwo:{
+taiwo:{
 name:"Taiwo Akinsade",
 position:"Senior IT Specialist",
 company:"Pathway Holdings Limited",
@@ -22,7 +22,7 @@ photo:"images/taiwo.png",
 vcf:"taiwo.vcf"
 },
 
-Ajibola:{
+ajibola:{
 name:"Ajibola Adekoya",
 position:"IT Support Specialist",
 company:"Pathway Holdings Limited",
@@ -33,7 +33,7 @@ photo:"images/ajibola.png",
 vcf:"ajibola.vcf"
 },
 
-Paul:{
+paul:{
 name:"Paul Ojo",
 position:"IT Support Specialist",
 company:"Pathway Holdings Limited",
@@ -44,7 +44,7 @@ photo:"images/paul.png",
 vcf:"paul.vcf"
 },
 
-Blessing:{
+blessing:{
 name:"Blessing Okoro",
 position:"Receptionist",
 company:"Pathway Holdings Limited",
@@ -55,7 +55,7 @@ photo:"images/blessing.png",
 vcf:"blessing.vcf"
 },
 
-Osayi:{
+osayi:{
 name:"Osayi Uuzebor",
 position:"Human Resources Manager",
 company:"Pathway Holdings Limited",
@@ -66,7 +66,7 @@ photo:"images/Osayi.png",
 vcf:"osayi.vcf"
 },
 
-Esther:{
+esther:{
 name:"Esther Aver",
 position:"Human Resources",
 company:"Pathway Holdings Limited",
@@ -77,7 +77,7 @@ photo:"images/esther.png",
 vcf:"esther.vcf"
 },
 
-Jane:{
+jane:{
 name:"Jane Edeh",
 position:"Human Resources",
 company:"Pathway Holdings Limited",
@@ -88,7 +88,7 @@ photo:"images/jane.png",
 vcf:"jane.vcf"
 },
 
-Sanmi:{
+sanmi:{
 name:"Sanmi Ikuemonisan",
 position:"Admin Officer",
 company:"Pathway Holdings Limited",
@@ -99,7 +99,7 @@ photo:"images/sanmi.png",
 vcf:"sanmi.vcf"
 },
 
-Kunle:{
+kunle:{
 name:"Kunle Akanbi",
 position:"Admin Officer",
 company:"Pathway Holdings Limited",
@@ -110,7 +110,7 @@ photo:"images/kunle.png",
 vcf:"kunle.vcf"
 },
 
-Adekunle:{
+adekunle:{
 name:"Adekunle Alade",
 position:"GCEO",
 company:"Pathway Holdings Limited",
@@ -121,7 +121,7 @@ photo:"images/adekunle.png",
 vcf:"adekunle.vcf"
 },
 
-Dolapo:{
+dolapo:{
 name:"Dolapo Akanbi-Alade",
 position:"GCOO",
 company:"Pathway Holdings Limited",

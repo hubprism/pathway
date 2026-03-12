@@ -202,14 +202,12 @@ padding:80px 20px 25px;
 <script>
 
 let currentPerson = null;
-const urlParams = new URLSearchParams(window.location.search);
-let name = urlParams.get("name");
 
-if(!name){
-name = window.location.pathname.replace("/","");
-}
+const urlParams = new URLSearchParams(window.location.search);
+const name = urlParams.get("name");
 
 if(staff[name]){
+
 const person = staff[name];
 currentPerson = person;
 
