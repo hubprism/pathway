@@ -206,9 +206,9 @@ let currentPerson = null;
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 
-if(staff[id]){
+if(staff[name]){
 
-const person = staff[id];
+const person = staff[name];
 currentPerson = person;
 
 document.getElementById("name").innerText = person.name;
