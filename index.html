@@ -1,258 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Staff Card</title>
 
-<title>Staff Card</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:"Segoe UI", Arial, sans-serif;
+    }
 
-<style>
+    body{
+      background:#f2f4f8;
+      display:flex;
+      justify-content:center;
+      align-items:flex-start;
+      min-height:100vh;
+      padding:20px;
+    }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family: "Segoe UI", Arial, sans-serif;
-}
+    .card{
+      width:100%;
+      max-width:420px;
+      background:#fff;
+      border-radius:16px;
+      overflow:hidden;
+      box-shadow:0 10px 25px rgba(0,0,0,0.1);
+      text-align:center;
+      margin:auto;
+    }
 
-body{
-background:#f2f4f8;
-display:flex;
-justify-content:center;
-padding:20px;
-}
+    .header{
+      height:160px;
+      background:url("images/background.png") center/cover no-repeat;
+      position:relative;
+    }
 
-.card{
-width:100%;
-max-width:420px;
-background:white;
-border-radius:16px;
-overflow:hidden;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
-text-align:center;
-margin:auto;
-}
+    .profile-img{
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      border:6px solid #fff;
+      object-fit:cover;
+      object-position:top center;
+      position:absolute;
+      bottom:-60px;
+      left:50%;
+      transform:translateX(-50%);
+      background:#fff;
+    }
 
-.header{
-height:160px;
-background:url("images/background.png") center/cover no-repeat;
-position:relative;
-}
+    .content{
+      padding:80px 25px 30px;
+    }
 
-.profile-img{
-width:120px;
-height:120px;
-border-radius:50%;
-border:6px solid white;
-object-fit:cover;
-object-position: top center;
-position:absolute;
-bottom:-60px;
-left:50%;
-transform:translateX(-50%);
-}
+    h2{
+      font-size:24px;
+      margin-bottom:5px;
+      color:#222;
+    }
 
-.content{
-padding:80px 25px 30px;
-}
+    .title{
+      color:#444;
+      margin-bottom:5px;
+    }
 
-h2{
-font-size:24px;
-margin-bottom:5px;
-color:#222;
-}
+    .company{
+      color:#03264d;
+      margin-bottom:20px;
+      font-weight:600;
+    }
 
-.title{
-color:#444;
-margin-bottom:5px;
-}
+    .info{
+      margin:12px 0;
+      font-size:15px;
+      color:#444;
+      word-break:break-word;
+    }
 
-.company{
-color:#03264d;
-margin-bottom:20px;
-font-weight:600;
-}
+    .info a{
+      color:#03264d;
+      text-decoration:none;
+    }
 
-.info{
-margin:12px 0;
-font-size:15px;
-color:#444;
-}
+    .buttons{
+      margin-top:20px;
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
 
-.buttons{
-margin-top:20px;
-display:flex;
-flex-direction:column;
-gap:12px;
-}
+    .row-buttons{
+      display:flex;
+      gap:10px;
+    }
 
-.row-buttons{
-display:flex;
-gap:10px;
-}
+    .row-buttons .btn{
+      flex:1;
+      text-align:center;
+    }
 
-.row-buttons .btn{
-flex:1;
-text-align:center;
-}
+    .share{
+      background:#03264d;
+      border:none;
+      cursor:pointer;
+    }
 
-.share{
-background:#03264d;
-}
+    .btn{
+      padding:14px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;
+      color:#fff;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      gap:8px;
+      min-height:54px;
+    }
 
-.btn{
-padding:14px;
-border-radius:8px;
-text-decoration:none;
-font-weight:600;
-color:white;
-display:block;
-}
+    .call{ background:#03264d; }
+    .email{ background:#393a40; }
+    .whatsapp{ background:#25D366; }
+    .save{
+      background:#03264d;
+      margin-top:10px;
+    }
 
-.call{ background:#03264d; }
+    .btn:hover{
+      opacity:0.9;
+    }
 
-.email{ background:#393a40; }
+    .icon-img{
+      width:24px;
+      height:24px;
+      object-fit:contain;
+    }
 
-.whatsapp{ background:#25D366; }
+    .not-found{
+      width:100%;
+      max-width:420px;
+      background:#fff;
+      border-radius:16px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.1);
+      padding:40px 20px;
+      text-align:center;
+      margin:auto;
+    }
 
-.save{
-background:#03264d;
-margin-top:10px;
-}
+    .not-found h2{
+      margin-bottom:10px;
+    }
 
-.btn:hover{
-opacity:0.9;
-}
+    .not-found p{
+      color:#555;
+      font-size:15px;
+    }
 
-@media (max-width:480px){
+    @media (max-width:480px){
+      body{
+        padding:10px;
+      }
 
-body{
-padding:10px;
-}
+      .card{
+        max-width:100%;
+        border-radius:12px;
+      }
 
-.card{
-max-width:100%;
-border-radius:12px;
-}
-
-.content{
-padding:80px 20px 25px;
-}
-
-}
-
-</style>
-
+      .content{
+        padding:80px 20px 25px;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<div class="card">
+  <div class="card" id="card">
+    <div class="header">
+      <img id="photo" class="profile-img" src="" alt="Profile Photo" />
+    </div>
 
-<div class="header">
-<img id="photo" class="profile-img" src="">
-</div>
+    <div class="content">
+      <h2 id="name"></h2>
+      <div class="title" id="position"></div>
+      <div class="company" id="company"></div>
 
-<div class="content">
+      <div class="info">🌐 <a id="website" href="" target="_blank" rel="noopener noreferrer"></a></div>
+      <div class="info">📧 <span id="emailText"></span></div>
 
-<h2 id="name"></h2>
+      <div class="buttons">
+        <a class="btn call" id="callBtn" href="#">📞 Call</a>
 
-<div class="title" id="position"></div>
+        <a class="btn email" id="emailBtn" href="#">📧 Send Email</a>
 
-<div class="company" id="company"></div>
+        <div class="row-buttons">
+          <a class="btn whatsapp" id="whatsappBtn" href="#" target="_blank" rel="noopener noreferrer">
+            <img src="images/whatsapp.png" class="icon-img" alt="WhatsApp" />
+          </a>
 
-<div class="info">🌐 <a id="website" href="" target="_blank"></a></div>
+          <button class="btn share" id="shareBtn" type="button">
+            <img src="images/share.png" class="icon-img" alt="Share" />
+          </button>
+        </div>
 
-<div class="info">📧 <span id="emailText"></span></div>
+        <a class="btn save" id="saveBtn" href="#" download>⬇ Save Contact</a>
+      </div>
+    </div>
+  </div>
 
-<div class="buttons">
+  <script src="./staff-data.js"></script>
 
-<a class="btn call" id="callBtn" href="#">
-📞 Call
-</a>
+  <script>
+    let currentPerson = null;
 
-<a class="btn email" id="emailBtn" href="#">
-📧 Send Email
-</a>
+    function getStaffNameFromUrl() {
+      const urlParams = new URLSearchParams(window.location.search);
+      let name = urlParams.get("name");
 
-<div class="row-buttons">
+      if (!name) {
+        const pathParts = window.location.pathname.split("/").filter(Boolean);
+        if (pathParts.length > 0) {
+          name = pathParts[0];
+        }
+      }
 
-<a class="btn whatsapp" id="whatsappBtn" href="#">
-<img src="images/whatsapp.png" style="width:24px;height:24px;">
-</a>
+      if (name) {
+        name = name.toLowerCase().trim();
+      }
 
-<a class="btn share" onclick="shareContact()">
-<img src="images/share.png" style="width:24px;height:24px;">
-</a>
+      return name;
+    }
 
-</div>
+    function cleanPhone(phone) {
+      return String(phone).replace(/\D/g, "");
+    }
 
-<a class="btn save" id="saveBtn" href="#" download>
-⬇ Save Contact
-</a>
+    function showNotFound() {
+      document.body.innerHTML = `
+        <div class="not-found">
+          <h2>Staff not found</h2>
+          <p>Check the staff name in the link and try again.</p>
+        </div>
+      `;
+    }
 
-</div>
+    function loadStaffData() {
+      const name = getStaffNameFromUrl();
 
-</div>
+      if (!name || typeof staff === "undefined" || !staff[name]) {
+        showNotFound();
+        return;
+      }
 
-</div>
+      const person = staff[name];
+      currentPerson = person;
 
-<script src="staff-data.js"></script>
+      document.getElementById("name").innerText = person.name || "";
+      document.getElementById("position").innerText = person.position || "";
+      document.getElementById("company").innerText = person.company || "";
 
-<script>
+      document.getElementById("website").innerText = person.website || "";
+      document.getElementById("website").href = person.website || "#";
 
-let currentPerson = null;
+      document.getElementById("emailText").innerText = person.email || "";
+      document.getElementById("photo").src = person.photo || "";
 
-const urlParams = new URLSearchParams(window.location.search);
-const name = urlParams.get("name");
+      const phone = cleanPhone(person.phone || "");
 
-if(staff[name]){
+      document.getElementById("callBtn").href = phone ? "tel:+" + phone : "#";
+      document.getElementById("emailBtn").href = person.email ? "mailto:" + person.email : "#";
+      document.getElementById("whatsappBtn").href = phone ? "https://wa.me/" + phone : "#";
+      document.getElementById("saveBtn").href = person.vcf || "#";
 
-const person = staff[name];
-currentPerson = person;
+      document.title = person.name || "Staff Card";
+    }
 
-document.getElementById("name").innerText = person.name;
-document.getElementById("position").innerText = person.position;
-document.getElementById("company").innerText = person.company;
+    function shareContact() {
+      if (navigator.share && currentPerson) {
+        navigator.share({
+          title: currentPerson.name,
+          text: currentPerson.position + " - " + currentPerson.company,
+          url: window.location.href
+        }).catch(function () {});
+      } else {
+        alert("Sharing not supported on this device");
+      }
+    }
 
-document.getElementById("website").innerText = person.website;
-document.getElementById("website").href = person.website;
+    document.getElementById("shareBtn").addEventListener("click", shareContact);
 
-document.getElementById("emailText").innerText = person.email;
-
-document.getElementById("photo").src = person.photo;
-
-document.getElementById("callBtn").href = "tel:+" + person.phone;
-
-document.getElementById("emailBtn").href = "mailto:" + person.email;
-
-document.getElementById("whatsappBtn").href = "https://wa.me/" + person.phone;
-
-document.getElementById("saveBtn").href = person.vcf;
-
-document.title = person.name;
-
-}
-
-function shareContact(){
-
-if(navigator.share && currentPerson){
-
-navigator.share({
-title: currentPerson.name,
-text: currentPerson.position + " - " + currentPerson.company,
-url: window.location.href
-});
-
-}else{
-
-alert("Sharing not supported on this device");
-
-}
-
-}
-
-</script>
+    loadStaffData();
+  </script>
 
 </body>
 </html>
