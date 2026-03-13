@@ -135,7 +135,7 @@ const staff = {
 
    rihanot: {
     name: "Rihanot Ojo-Oba",
-    position: "Corporate Communications PR",
+    position: "Corporate Communications/PR",
     company: "Pathway Holdings Limited",
     website: "https://pathway.ng",
     email: "rihanot@pathway.ng",
