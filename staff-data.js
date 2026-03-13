@@ -122,6 +122,17 @@ const staff = {
     vcf: "adekunle.vcf"
   },
 
+  adenike: {
+    name: "Adenike Yusuf",
+    position: "Corporate Communications LEAD",
+    company: "Pathway Holdings Limited",
+    website: "https://pathway.ng",
+    email: "adenike@pathway.ng",
+    phone: "2349035232802",
+    photo: "images/adenike.png",
+    vcf: "adenike.vcf"
+  },
+
   dolapo: {
     name: "Dolapo Akanbi-Alade",
     position: "GCOO",
