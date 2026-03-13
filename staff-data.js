@@ -133,6 +133,17 @@ const staff = {
     vcf: "adenike.vcf"
   },
 
+   rihanot: {
+    name: "Rihanot Ojo-Oba",
+    position: "Corporate Communications PR",
+    company: "Pathway Holdings Limited",
+    website: "https://pathway.ng",
+    email: "rihanot@pathway.ng",
+    phone: "2348089009319",
+    photo: "images/rihanot.png",
+    vcf: "adenike.vcf"
+  },
+
   dolapo: {
     name: "Dolapo Akanbi-Alade",
     position: "GCOO",
